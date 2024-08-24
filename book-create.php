@@ -2,7 +2,7 @@
 include 'components/header.php'
 ?>
 
-<h1 class="text-center text-3xl mb-4">Create New Book</h1>
+<h1 class="text-center text-3xl mb-4 text-blue-500">Create New Book</h1>
 
 <form action="" method="post" enctype="multipart/form-data" class="w-2/3 mx-auto">
     <div>
