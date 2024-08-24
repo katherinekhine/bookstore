@@ -28,7 +28,7 @@
                 </a>
             </li>
             <li class="inline-block px-4 border border-zinc-800 rounded-lg mx-2">
-                <a href="#" class="text-zinc-800">
+                <a href="book-create.php" class="text-zinc-800">
                     <span class="material-symbols-outlined">
                         add_circle
                     </span> New Book
