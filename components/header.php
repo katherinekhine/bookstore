@@ -13,22 +13,22 @@
 </head>
 
 <body>
-    <nav class="flex justify-between item-center p-4 bg-green-700">
-        <a href="" class="text-white">
+    <nav class="flex justify-between item-center p-4 bg-blue-300 px-8">
+        <a href="" class="text-zinc-800">
             <span class="material-symbols-outlined">
                 auto_stories
             </span> BookStore
         </a>
         <ul>
-            <li class="inline-block px-4 border border-white rounded-lg mx-2">
-                <a href="index.php" class="text-white">
+            <li class="inline-block px-4 border border-zinc-800 rounded-lg mx-2">
+                <a href="index.php" class="text-zinc-800">
                     <span class="material-symbols-outlined">
                         home
                     </span> Home
                 </a>
             </li>
-            <li class="inline-block px-4 border border-white rounded-lg mx-2">
-                <a href="#" class="text-white">
+            <li class="inline-block px-4 border border-zinc-800 rounded-lg mx-2">
+                <a href="#" class="text-zinc-800">
                     <span class="material-symbols-outlined">
                         add_circle
                     </span> New Book
