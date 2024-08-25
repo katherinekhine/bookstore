@@ -38,15 +38,15 @@ class Book extends Database
         return $result->rowCount();
     }
 
-    // public function delete($id)
-    // {
-    //     $query = "DELETE FROM books WHERE id = :id";
-    //     $result = $this->connect()->prepare($query);
-    //     $result->execute([
-    //         'id' => $id
-    //     ]);
-    //     return $result->rowCount();
-    // }
+    public function delete($id)
+    {
+        $query = "DELETE FROM books WHERE id = :id";
+        $result = $this->connect()->prepare($query);
+        $result->execute([
+            'id' => $id
+        ]);
+        return $result->rowCount();
+    }
 }
 
 $book = new Book();
