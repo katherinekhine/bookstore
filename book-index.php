@@ -17,7 +17,7 @@ include 'components/header.php'
 
 <div class="grid grid-cols-4 gap-6">
     <?php foreach ($data as $book): ?>
-        <a href="book-show.php">
+        <a href="book-show.php?id=<?php echo $book['id'] ?>">
             <div class="bg-slate-300 rounded-lg overflow-hidden">
                 <img src="<?= $book['cover'] ?>" alt="" class="h-80 w-full object-cover">
                 <p class="px-4 py-2 font-bold"><?= $book['title'] ?></p>

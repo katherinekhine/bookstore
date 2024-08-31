@@ -1,18 +1,28 @@
 <?php
+
+include 'vendor/autoload.php';
+
+use classes\Book;
+
+$data = new Book();
+$book = $data->show($_GET['id']);
+
+?>
+
+<?php
 include 'components/header.php'
 ?>
 
-<img src="https://cdn.pixabay.com/photo/2022/07/08/10/37/books-7309019_1280.png" alt="" class="w-50 h-96 object-cover border-8 border-slate-500 rounded-lg mb-2">
+<img src="<?= $book->cover ?>" alt="" class="w-50 h-96 object-cover border-8 border-slate-500 rounded-lg mb-2">
 
 <div class="mb-2">
     <label for="rating" class="text-gray-400 italic">Rating</label>
     <p class="text-yellow-500">
-        <span class="material-symbols-outlined">
-            stars
-        </span>
-        <span class="material-symbols-outlined">
-            stars
-        </span>
+        <?php for ($i = 0; $i < $book->rating; $i++): ?>
+            <span class="material-symbols-outlined">
+                stars
+            </span>
+        <?php endfor; ?>
     </p>
 </div>
 <div class="mb-2">
@@ -28,7 +38,7 @@ include 'components/header.php'
     <span>2024, Jul 17</span>
 </div>
 <div class="mb-2">
-    <a href="index.php" class="border bg-slate-500 p-2 rounded text-white"><span class="material-symbols-outlined">
+    <a href="book-index.php" class="border bg-slate-500 p-2 rounded text-white"><span class="material-symbols-outlined">
             arrow_back_ios
         </span> Back</a>
     <a href="" class="border bg-yellow-500 p-2 rounded text-white"><span class="material-symbols-outlined">
