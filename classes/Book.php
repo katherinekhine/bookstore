@@ -1,10 +1,14 @@
 <?php
 
-include 'Database.php';
+// include 'Database.php';
+
+namespace classes;
+
+use classes\Database;
 
 class Book extends Database
 {
-    public function index()
+    public function all()
     {
         $query = "SELECT * FROM books";
         $result = $this->connect()->prepare($query);

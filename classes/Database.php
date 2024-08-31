@@ -1,5 +1,10 @@
 <?php
 
+namespace classes;
+
+use PDO;
+use PDOException;
+
 class Database
 {
     private $dbhost;
@@ -30,6 +35,6 @@ class Database
 
 // for testing
 $db = new Database();
-print_r($db);
-echo "<br>";
-print_r($db->connect());
+// print_r($db);
+// echo "<br>";
+// print_r($db->connect());

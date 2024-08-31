@@ -1,0 +1,16 @@
+{
+  "name": "hp/bookstore",
+  "autoload": {
+    "psr-4": {
+      "Hp\\Bookstore\\": "src/",
+      "classes\\": "classes"
+    }
+  },
+  "authors": [
+    {
+      "name": "katherinekhine",
+      "email": "khaingkatherine@gmail.com"
+    }
+  ],
+  "require": {}
+}
