@@ -1,19 +1,15 @@
 <?php
 
-
-include 'vendor/autoload.php';
-
 use classes\Book;
 
+include 'vendor/autoload.php';
 
 $books = new Book();
 $data = $books->all();
 
 ?>
 
-<?php
-include 'components/header.php'
-?>
+<?php include 'components/header.php' ?>
 
 <div class="grid grid-cols-4 gap-6">
     <?php foreach ($data as $book): ?>
@@ -23,9 +19,7 @@ include 'components/header.php'
                 <p class="px-4 py-2 font-bold"><?= $book['title'] ?></p>
                 <p class="px-4 py-2 text-yellow-500">
                     <?php for ($i = 0; $i < $book['rating']; $i++): ?>
-                        <span class="material-symbols-outlined">
-                            stars
-                        </span>
+                        <span class="material-symbols-outlined">stars</span>
                     <?php endfor; ?>
                 </p>
             </div>
@@ -33,6 +27,4 @@ include 'components/header.php'
     <?php endforeach; ?>
 </div>
 
-<?php
-include 'components/footer.php'
-?>
+<?php include 'components/footer.php' ?>
