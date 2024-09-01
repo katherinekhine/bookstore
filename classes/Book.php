@@ -36,7 +36,11 @@ class Book extends Database
 
     public function update($data = [])
     {
-        $query = "UPDATE books SET title = :title, about = :about, cover = :cover, rating = :rating, created_at=NOW() WHERE id = :id";
+        if (isset($data['cover'])) {
+            $query = "UPDATE books SET title = :title, about = :about, cover = :cover, rating = :rating, created_at=NOW() WHERE id = :id";
+        } else {
+            $query = "UPDATE books SET title = :title, about = :about, rating = :rating, created_at=NOW() WHERE id = :id";
+        }
         $result = $this->connect()->prepare($query);
         $result->execute($data);
         return $result->rowCount();

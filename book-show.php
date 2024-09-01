@@ -41,7 +41,7 @@ $book = $data->show($_GET['id']);
             </span> Back</a>
     </div>
     <div class="inline-block">
-        <a href="" class="border bg-yellow-500 p-2 rounded text-white flex items-center">
+        <a href="book-edit.php?id=<?= $book->id ?>" class="border bg-yellow-500 p-2 rounded text-white flex items-center">
             <span class="material-symbols-outlined">edit</span>
             Edit
         </a>
