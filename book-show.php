@@ -47,7 +47,7 @@ $book = $data->show($_GET['id']);
         </a>
     </div>
     <div class="inline-block">
-        <a href="" class="border bg-red-500 p-2 rounded text-white flex items-center">
+        <a href="book-delete.php?id=<?= $book->id ?>" class="border bg-red-500 p-2 rounded text-white flex items-center">
             <span class="material-symbols-outlined">delete</span>
             Delete
         </a>
